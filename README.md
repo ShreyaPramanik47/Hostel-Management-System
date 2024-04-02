@@ -1,2 +1,2 @@
 # Hostel-Management-System
-Shreya 
+Hostel Management System Using HTML , CSS & Js
