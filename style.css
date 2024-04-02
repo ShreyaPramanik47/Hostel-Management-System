@@ -1,0 +1,65 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+.wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    
+}
+.text{
+    text-align: center;
+    height: 80px;
+    background: #262626f5;
+    color: #FFF;
+}
+.text h2{
+    margin: 0;
+    line-height: 90px;
+    font-size: 38px;
+}
+.nav{
+    background: #FFF;
+    color: black;
+    display: flex
+}
+.logo-img{
+    height: 5rem;
+    width: 8rem;
+}
+.nav .logo{
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 5rem;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    
+}
+ul li{
+    padding: 45px;
+    list-style: none
+}
+ul li a{
+    color: #050505;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.contact{
+    background-color: rgba(169, 222, 255, 0.95);
+    padding: 9px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
