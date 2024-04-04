@@ -14,8 +14,10 @@
 <body>
 
     <div id="wrapper">
-        <div class="text">
-            <h2>Book Your Room</h2>
+        <div class="text ">
+             <h1>
+                Welcome to our Hostel : <span class="stylee"></span>
+            </h1>
         </div>
         <div class="container">
             <div class="nav">
@@ -26,9 +28,10 @@
                 <div class="nav-items">
                     <div><a href="#home">Home</a></div>
                     <div><a href="#about">About</a></div>
-                    <div><a href="#rooms">Rooms</a></div>
+                    <!-- <div><a href="#rooms">Rooms</a></div> -->
                     <div><a href="#pages">Pages</a></div>
                     <div><a href="#contactme" class="contact">Contact</a></div>
+                    <div><a href="#contactme" class="contact">Log in/Sign Up</a></div>
                 </div>
 
             </div>
@@ -60,24 +63,24 @@
                                     supportive environment where friendships flourish and memories are made.</p>
                             </div>
                             <div class="info-feature">
-                                <div class="info-right-feature">
-                                    <span class="left wifi">
+                                <div class="info-left-feature">
+                                    <span class="left wifi ">
                                         <img src="Image/wifi.png" alt="logo">
-                                        <p>Free available high speed WiFi</p>
+                                        <p class="feature-text">Free available high speed WiFi</p>
                                     </span>
                                     <span class="left">
                                         <img src="Image/suitcase.png" alt="logo">
-                                        <p>Free storage of luggage of any size</p>
+                                        <p class="feature-text">Free storage of luggage of any size</p>
                                     </span>
                                 </div>
-                                <div class="info-left-feature">
+                                <div class="info-right-feature">
                                     <span class="right">
                                         <img src="Image/location (1).png" alt="logo">
-                                        <p>Convenient location in the center</p>
+                                        <p class="feature-text">Convenient location in the center</p>
                                     </span>
                                     <div class="right">
                                         <img src="Image/parking.png" alt="logo">
-                                        <p>Parking place allocated to you</p>
+                                        <p class="feature-text">Parking place allocated to you</p>
                                     </div>
 
                                 </div>
@@ -98,8 +101,20 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+
+        // heading
+        var typeData = new Typed(".stylee", {
+        strings: [
+          " Find Your Perfect Stay!",
+          "Start Your Journey Here!"
+        ],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
         // navbar
         const navbar = document.querySelector('.nav');
         function stickyNavbar() {
