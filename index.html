@@ -37,31 +37,96 @@
                 <div class="leftSide">
                     <div class="left-content">
                         <h1>Campus Comfort: Reserve Your College Hostel Spot Hassle-Free!</h1>
-                        <p>Experience campus living at its best! Our college hostel offers modern amenities and a vibrant community. Reserve your spot today and make campus your home away from home!</p>
+                        <p>Experience campus living at its best! Our college hostel offers modern amenities and a
+                            vibrant community. Reserve your spot today and make campus your home away from home!</p>
                     </div>
                 </div>
                 <div class="rightSide">
                     <div class="right-content">
-                        <img src="Image/hostel3.jpg" alt="hostel room">
+                        <img src="Image/hostel1.avif" alt="hostel room">
                     </div>
 
                 </div>
             </div>
+
+            <!-- --- -->
+            <div class="info-part">
+                <div class="info-part-width">
+                    <div class="info-leftSide">
+                        <div class="info-left-content">
+                            <div class="info-heading">
+                                <h1>We have everything you need</h1>
+                                <p>Indulge in the perfect blend of comfort and community at our hostel. Discover a
+                                    supportive environment where friendships flourish and memories are made.</p>
+                            </div>
+                            <div class="info-feature">
+                                <div class="info-right-feature">
+                                    <span class="left wifi">
+                                        <img src="Image/wifi.png" alt="logo">
+                                        <p>Free available high speed WiFi</p>
+                                    </span>
+                                    <span class="left">
+                                        <img src="Image/suitcase.png" alt="logo">
+                                        <p>Free storage of luggage of any size</p>
+                                    </span>
+                                </div>
+                                <div class="info-left-feature">
+                                    <span class="right">
+                                        <img src="Image/location (1).png" alt="logo">
+                                        <p>Convenient location in the center</p>
+                                    </span>
+                                    <div class="right">
+                                        <img src="Image/parking.png" alt="logo">
+                                        <p>Parking place allocated to you</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-rightSide">
+                        <div class="info-right-content">
+                            <img src="Image/room2.jpg" alt="hostel room">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <button class="sticky-btn" onclick="scrollToTop()">↑</button>
         </div>
     </div>
 
 
 
     <script>
+        // navbar
         const navbar = document.querySelector('.nav');
-function stickyNavbar() {
-  if (window.scrollY > 0) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-}
-window.addEventListener('scroll', stickyNavbar);
+        function stickyNavbar() {
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        }
+        window.addEventListener('scroll', stickyNavbar);
+
+        // sticky button 
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.sticky-btn').classList.remove('hidden');
+            } else {
+                document.querySelector('.sticky-btn').classList.add('hidden');
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
 
     </script>
 </body>
