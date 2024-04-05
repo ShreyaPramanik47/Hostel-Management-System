@@ -137,38 +137,19 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* .right-content{
-    margin-left: 3rem;
-} */
-
 .rightSide .right-content img{
     height: 41rem;
     width: 100%;
-    filter:grayscale(1);
-    transition:all 1s;
-    animation-name: scaleImage;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     object-fit: cover;
-    /* z-index:-9; */
-    transition: transform 0.3s ease;
 }
-/* .rightSide .right-content img:hover{
-    transform: scale(1.1) translate(0, -5%); 
-   
-} */
-@keyframes scaleImage {
-    0%{
-        filter: grayscale(0);
-    }
-    50%{
-        filter: grayscale(1);
-    }
-    100%{
-        filter: grayscale(0);
-    }
-    
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  @keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
   }
   
 /* sticky button */
@@ -279,6 +260,8 @@
     transform: scale(1.05); 
    
 }
+/* ANIMATED SLIDESHOW */
+
 
 
 

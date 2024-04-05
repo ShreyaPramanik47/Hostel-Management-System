@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="Image/UEM-Symbol.png">
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="index.js" /> -->
     <title>College Hostel</title>
 </head>
 
@@ -47,7 +46,10 @@
                 </div>
                 <div class="rightSide">
                     <div class="right-content">
-                        <img src="Image/hostel1.avif" alt="hostel room">
+                        <img class="image fade" src="Image/hostel1.avif" alt="hostel room">
+                        <img class="image fade" src="Image/hostel2.jpg" alt="">
+                        <img class="image fade" src="Image/hostel3.jpg" alt="">
+                        
                     </div>
 
                 </div>
@@ -103,52 +105,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-
-        // heading
-        var typeData = new Typed(".stylee", {
-        strings: [
-          " Find Your Perfect Stay!",
-          "Start Your Journey Here!"
-        ],
-        loop: true,
-        typeSpeed: 50,
-        backSpeed: 80,
-        backDelay: 1500,
-      });
-        // navbar
-        const navbar = document.querySelector('.nav');
-        function stickyNavbar() {
-            if (window.scrollY > 0) {
-                navbar.classList.add('sticky');
-            } else {
-                navbar.classList.remove('sticky');
-            }
-        }
-        window.addEventListener('scroll', stickyNavbar);
-
-        // sticky button 
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.querySelector('.sticky-btn').classList.remove('hidden');
-            } else {
-                document.querySelector('.sticky-btn').classList.add('hidden');
-            }
-        }
-
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        // pages opening
-        // const pagesOpening = document.getElementsByClassName(pages);
-        // functiom openModal()
-
-
-    </script>
+   <script src="index.js"></script>
 </body>
 
 </html>
